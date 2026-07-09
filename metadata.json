@@ -1,0 +1,6 @@
+{
+  "name": "Be Spanish",
+  "description": "Una landing page moderna y responsiva para clases particulares de español con tarifas, sobre mí, contacto y testimonios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

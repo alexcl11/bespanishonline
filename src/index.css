@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+/* 
+  =========================================
+  CSS VARIABLES (CUSTOM PROPERTIES)
+  =========================================
+  Puedes modificar estos colores directamente para cambiar la apariencia 
+  de toda la landing page de manera instantánea.
+*/
+:root {
+  /* Professional Polish Theme Custom Properties */
+  --color-primary: #d46a4d;          /* --c-accent (Terracota) */
+  --color-primary-hover: #b3563b;    /* --c-accent-hover */
+  --color-primary-light: #f2e7e4;    /* Light terracotta background accent */
+  
+  /* Color secundario: Negro tinta / Slate profundo */
+  --color-secondary: #2d2d2d;        /* --c-ink */
+  --color-secondary-light: #6e6e6e;  /* --c-muted */
+  
+  /* Color de acento secundario */
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  
+  /* Fondos y superficies */
+  --color-bg-warm: #fcfaf7;          /* --c-bg (Warm off-white) */
+  --color-bg-white: #ffffff;         /* --c-card (Pure white) */
+  --color-bg-light: #f5ece6;         /* Slightly darker warm tone */
+  --color-border: #e8e3df;           /* --c-border */
+  
+  /* Colores de estado */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+}
+
+/* Integración de variables con el motor de Tailwind CSS v4 */
+@theme {
+  --font-sans: "Helvetica Neue", Helvetica, "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", "Helvetica Neue", sans-serif;
+  
+  --color-terracotta: var(--color-primary);
+  --color-terracotta-hover: var(--color-primary-hover);
+  --color-terracotta-light: var(--color-primary-light);
+  
+  --color-navy: var(--color-secondary);
+  --color-navy-light: var(--color-secondary-light);
+  
+  --color-accent-blue: var(--color-accent);
+  --color-accent-blue-hover: var(--color-accent-hover);
+  
+  --color-bg-warm: var(--color-bg-warm);
+  --color-bg-white: var(--color-bg-white);
+  --color-bg-light: var(--color-bg-light);
+  --color-border-theme: var(--color-border);
+  
+  --shadow-card: 0 4px 20px rgba(212, 106, 77, 0.08);
+}
+
+/* Fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* Comportamientos globales adicionales */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--color-bg-warm);
+  color: var(--color-secondary);
+  overflow-x: hidden;
+}
+
+/* Clases de animación personalizadas */
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ocultar scrollbar de navegadores pero mantener scroll funcional */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
