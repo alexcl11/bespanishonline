@@ -1,21 +1,21 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { 
-  Menu, 
-  X, 
-  Check, 
-  BookOpen, 
-  Award, 
-  Clock, 
-  MessageSquare, 
-  Star, 
-  ArrowRight, 
-  Instagram, 
-  Linkedin, 
-  Youtube, 
-  ChevronDown, 
-  ChevronUp, 
-  ShieldCheck, 
-  Copy, 
+import {
+  Menu,
+  X,
+  Check,
+  BookOpen,
+  Award,
+  Clock,
+  MessageSquare,
+  Star,
+  ArrowRight,
+  Instagram,
+  Linkedin,
+  Youtube,
+  ChevronDown,
+  ChevronUp,
+  ShieldCheck,
+  Copy,
   ExternalLink,
   Sparkles,
   Play,
@@ -332,7 +332,7 @@ export default function App() {
   const handleContactSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simular envío de API
     setTimeout(() => {
       setIsSubmitting(false);
@@ -357,14 +357,14 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col selection:bg-terracotta selection:text-white" id="inicio">
-      
+
       {/* 1. BARRA DE NAVEGACIÓN FIJA */}
       <nav className="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md z-40 border-b border-slate-100 shadow-xs transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-18 items-center">
-            
+
             {/* Logo */}
-            <div 
+            <div
               className="flex items-center gap-2 cursor-pointer group"
               onClick={() => scrollTo('inicio')}
               id="nav-logo"
@@ -380,37 +380,37 @@ export default function App() {
 
             {/* Enlaces Desktop */}
             <div className="hidden md:flex items-center space-x-8">
-              <button 
-                onClick={() => scrollTo('inicio')} 
+              <button
+                onClick={() => scrollTo('inicio')}
                 className={`font-medium text-sm transition-colors cursor-pointer ${activeSection === 'inicio' ? 'text-terracotta font-semibold' : 'text-navy-light hover:text-terracotta'}`}
                 id="link-inicio"
               >
                 Home
               </button>
-              <button 
-                onClick={() => scrollTo('sobre-mi')} 
+              <button
+                onClick={() => scrollTo('sobre-mi')}
                 className={`font-medium text-sm transition-colors cursor-pointer ${activeSection === 'sobre-mi' ? 'text-terracotta font-semibold' : 'text-navy-light hover:text-terracotta'}`}
                 id="link-sobre-mi"
               >
                 About Me
               </button>
-              <button 
-                onClick={() => scrollTo('precios')} 
+              <button
+                onClick={() => scrollTo('precios')}
                 className={`font-medium text-sm transition-colors cursor-pointer ${activeSection === 'precios' ? 'text-terracotta font-semibold' : 'text-navy-light hover:text-terracotta'}`}
                 id="link-precios"
               >
                 Rates & Packages
               </button>
-              <button 
-                onClick={() => scrollTo('contacto')} 
+              <button
+                onClick={() => scrollTo('contacto')}
                 className={`font-medium text-sm transition-colors cursor-pointer ${activeSection === 'contacto' ? 'text-terracotta font-semibold' : 'text-navy-light hover:text-terracotta'}`}
                 id="link-contacto"
               >
                 Contact
               </button>
 
-              <button 
-                onClick={() => scrollTo('precios')} 
+              <button
+                onClick={() => scrollTo('precios')}
                 className="bg-terracotta hover:bg-terracotta-hover text-white px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-md cursor-pointer shadow-xs"
                 id="btn-nav-cta"
               >
@@ -420,7 +420,7 @@ export default function App() {
 
             {/* Hamburguesa Mobile */}
             <div className="md:hidden flex items-center">
-              <button 
+              <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="text-navy hover:text-terracotta p-2 focus:outline-hidden cursor-pointer"
                 aria-label="Open menu"
@@ -436,37 +436,37 @@ export default function App() {
         {/* Menú Mobile desplegable */}
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-6 space-y-3 shadow-lg absolute w-full left-0 animate-fadeIn" id="mobile-menu-dropdown">
-            <button 
-              onClick={() => scrollTo('inicio')} 
+            <button
+              onClick={() => scrollTo('inicio')}
               className={`block w-full text-left py-2 px-3 rounded-lg font-medium text-base ${activeSection === 'inicio' ? 'bg-terracotta/5 text-terracotta font-semibold' : 'text-navy hover:bg-slate-50'}`}
               id="mobile-link-inicio"
             >
               Home
             </button>
-            <button 
-              onClick={() => scrollTo('sobre-mi')} 
+            <button
+              onClick={() => scrollTo('sobre-mi')}
               className={`block w-full text-left py-2 px-3 rounded-lg font-medium text-base ${activeSection === 'sobre-mi' ? 'bg-terracotta/5 text-terracotta font-semibold' : 'text-navy hover:bg-slate-50'}`}
               id="mobile-link-sobre-mi"
             >
               About Me
             </button>
-            <button 
-              onClick={() => scrollTo('precios')} 
+            <button
+              onClick={() => scrollTo('precios')}
               className={`block w-full text-left py-2 px-3 rounded-lg font-medium text-base ${activeSection === 'precios' ? 'bg-terracotta/5 text-terracotta font-semibold' : 'text-navy hover:bg-slate-50'}`}
               id="mobile-link-precios"
             >
               Rates & Packages
             </button>
-            <button 
-              onClick={() => scrollTo('contacto')} 
+            <button
+              onClick={() => scrollTo('contacto')}
               className={`block w-full text-left py-2 px-3 rounded-lg font-medium text-base ${activeSection === 'contacto' ? 'bg-terracotta/5 text-terracotta font-semibold' : 'text-navy hover:bg-slate-50'}`}
               id="mobile-link-contacto"
             >
               Contact
             </button>
             <div className="pt-2">
-              <button 
-                onClick={() => scrollTo('precios')} 
+              <button
+                onClick={() => scrollTo('precios')}
                 className="w-full bg-terracotta hover:bg-terracotta-hover text-white text-center py-3 rounded-xl font-semibold transition-all shadow-xs cursor-pointer block"
                 id="mobile-btn-cta"
               >
@@ -488,27 +488,27 @@ export default function App() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
             {/* Contenido Izquierdo */}
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left animate-fadeIn">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-terracotta-light text-terracotta font-semibold text-xs tracking-wider uppercase">
                 <Sparkles className="w-3.5 h-3.5 animate-pulse" />
                 Learn with a Native Spanish Teacher
               </div>
-              
+
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-navy leading-tight tracking-tight" id="hero-title">
                 Learn Spanish <br />
                 <span className="text-terracotta bg-linear-to-r from-terracotta to-orange-600 bg-clip-text text-transparent">at your own pace</span> <br />
                 without the stress.
               </h1>
-              
+
               <p className="text-lg md:text-xl text-navy-light max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed" id="hero-subtitle">
                 Private, engaging, and personalized online Spanish lessons tailored to your exact lifestyle and goals. Break the barrier of speaking and express yourself naturally from day one!
               </p>
 
               {/* Botoneras */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-                <button 
+                <button
                   onClick={() => scrollTo('precios')}
                   className="bg-terracotta hover:bg-terracotta-hover text-white px-8 py-4 rounded-full text-base font-bold shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer"
                   id="hero-cta-btn"
@@ -516,7 +516,7 @@ export default function App() {
                   View Packages & Book
                   <ArrowRight className="w-5 h-5" />
                 </button>
-                <button 
+                <button
                   onClick={() => scrollTo('sobre-mi')}
                   className="bg-white hover:bg-slate-50 text-navy border border-slate-200 px-8 py-4 rounded-full text-base font-semibold shadow-xs hover:shadow-md transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
                   id="hero-secondary-btn"
@@ -546,19 +546,19 @@ export default function App() {
             <div className="lg:col-span-5 flex justify-center relative animate-fadeIn" id="hero-visual-container">
               {/* Círculo decorativo de fondo */}
               <div className="absolute inset-0 bg-linear-to-tr from-terracotta/20 to-orange-200/40 rounded-full blur-2xl transform scale-90 -z-10"></div>
-              
+
               <div className="relative">
                 {/* Imagen principal */}
                 <div className="w-72 h-72 sm:w-96 sm:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white rotate-2 hover:rotate-0 transition-all duration-500 transform hover:scale-102">
-                  <img 
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800&h=800" 
-                    alt="Spanish Teacher María López Hernán smiling with laptop" 
+                  <img
+                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800&h=800"
+                    alt="Spanish Teacher María López Hernán smiling with laptop"
                     className="w-full h-full object-cover object-top"
                     referrerPolicy="no-referrer"
                     id="hero-teacher-img"
                   />
                 </div>
-                
+
                 {/* Tarjetas flotantes interactivas */}
                 <div className="absolute -bottom-4 -left-6 bg-white p-4 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-3 animate-bounce" style={{ animationDuration: '3s' }}>
                   <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600">
@@ -570,10 +570,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="absolute top-8 -right-6 bg-white p-3.5 rounded-2xl shadow-md border border-slate-100 flex items-center gap-2.5">
-                  <Globe className="w-5 h-5 text-terracotta" />
-                  <span className="text-sm font-bold text-navy">Native from Spain</span>
-                </div>
+
               </div>
             </div>
 
@@ -584,7 +581,7 @@ export default function App() {
       {/* 3. SECCIÓN "SOBRE MÍ" (ABOUT ME) */}
       <section className="py-20 bg-white" id="sobre-mi">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-navy">About Me & My Method</h2>
             <div className="w-16 h-1 bg-terracotta mx-auto mt-4 rounded-full"></div>
@@ -594,15 +591,15 @@ export default function App() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-            
+
             {/* Foto e Info Rápida (Col 5) */}
             <div className="lg:col-span-5 space-y-6 text-center lg:text-left lg:sticky lg:top-24" id="about-photo-block">
               <div className="relative inline-block">
                 {/* Photo */}
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-slate-50 shadow-xl mx-auto">
-                  <img 
-                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=600&h=600" 
-                    alt="María López Hernán" 
+                  <img
+                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=600&h=600"
+                    alt="María López Hernán"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
                     id="about-profile-img"
@@ -649,7 +646,7 @@ export default function App() {
 
               {/* Section cards for key offerings */}
               <div className="space-y-6">
-                
+
                 {/* 1. Adults & Kids */}
                 <div className="bg-bg-warm p-6 rounded-2xl border border-slate-100 hover:border-orange-100 transition-all duration-300">
                   <h4 className="font-display font-bold text-navy text-lg flex items-center gap-2 mb-2">
@@ -729,7 +726,7 @@ export default function App() {
                 <h4 className="font-display font-bold text-navy text-xl">Ready to start?</h4>
                 <p className="text-sm text-navy-light">Book your first lesson today and let's make Spanish part of your life!</p>
                 <div>
-                  <button 
+                  <button
                     onClick={() => scrollTo('contacto')}
                     className="inline-flex items-center gap-2 bg-terracotta hover:bg-terracotta-hover text-white px-6 py-3 rounded-full text-sm font-bold shadow-sm transition-all duration-300 cursor-pointer"
                     id="btn-about-cta"
@@ -752,7 +749,7 @@ export default function App() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-slate-100 text-center relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-orange-100/30 rounded-bl-full pointer-events-none"></div>
-            
+
             {quizStep === 0 && (
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-1.5 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-xs font-semibold">
@@ -762,7 +759,7 @@ export default function App() {
                 <p className="text-navy-light text-base max-w-xl mx-auto font-light">
                   Answer these 3 quick questions based on everyday situations and colloquial Spanish. We'll recommend the ideal package for your skills!
                 </p>
-                <button 
+                <button
                   onClick={() => setQuizStep(1)}
                   className="bg-navy hover:bg-navy-light text-white px-8 py-3.5 rounded-full font-bold transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer"
                   id="start-quiz-btn"
@@ -778,10 +775,10 @@ export default function App() {
                   <span>Question {quizStep} of 3</span>
                   <span className="text-terracotta font-semibold">Progress: {Math.round(((quizStep - 1) / 3) * 100)}%</span>
                 </div>
-                
+
                 {/* Progress bar */}
                 <div className="w-full bg-slate-100 h-1.5 rounded-full max-w-md mx-auto overflow-hidden">
-                  <div 
+                  <div
                     className="bg-terracotta h-full transition-all duration-300"
                     style={{ width: `${((quizStep) / 3) * 100}%` }}
                   ></div>
@@ -820,14 +817,14 @@ export default function App() {
                   <strong className="text-navy block mt-2 font-semibold">{recommendedBono}</strong>
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
-                  <button 
+                  <button
                     onClick={() => scrollTo('precios')}
                     className="bg-terracotta hover:bg-terracotta-hover text-white px-8 py-3 rounded-full font-bold shadow-sm transition-all cursor-pointer"
                     id="quiz-pricing-btn"
                   >
                     View Recommended Packages
                   </button>
-                  <button 
+                  <button
                     onClick={resetQuiz}
                     className="bg-slate-100 hover:bg-slate-200 text-navy-light px-6 py-3 rounded-full font-medium transition-all cursor-pointer"
                     id="quiz-retry-btn"
@@ -847,7 +844,7 @@ export default function App() {
         <div className="absolute inset-0 bg-[radial-gradient(#e05a36_1px,transparent_1px)] [background-size:16px_16px] opacity-10 pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          
+
           {/* Main Pricing Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-terracotta font-semibold text-sm tracking-widest uppercase block mb-2">Invest in your Spanish</span>
@@ -897,13 +894,12 @@ export default function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-5xl mx-auto" id="pricing-grid-general">
               {bonos.filter(b => b.category === 'general').map((bono) => (
-                <div 
+                <div
                   key={bono.id}
-                  className={`bg-white rounded-3xl p-6 flex flex-col justify-between transition-all duration-300 border relative ${
-                    bono.popular 
-                      ? 'border-terracotta shadow-xl scale-102 ring-4 ring-terracotta/5' 
+                  className={`bg-white rounded-3xl p-6 flex flex-col justify-between transition-all duration-300 border relative ${bono.popular
+                      ? 'border-terracotta shadow-xl scale-102 ring-4 ring-terracotta/5'
                       : 'border-slate-200/80 hover:border-slate-300 shadow-xs hover:shadow-md'
-                  }`}
+                    }`}
                   id={`card-${bono.id}`}
                 >
                   {/* Badge Más Popular */}
@@ -919,14 +915,14 @@ export default function App() {
                       <h4 className="text-lg font-display font-bold text-navy">
                         {bono.hours}-Hour Package
                       </h4>
-                      
+
                       {/* Tarifa por hora detallada */}
                       <div className="mt-4 flex items-baseline justify-center gap-1">
                         <span className="text-4xl sm:text-5xl font-extrabold text-navy tracking-tight">
                           €{bono.price}
                         </span>
                       </div>
-                      
+
                       <span className="text-xs text-navy-light block mt-2 font-medium">
                         Just €{bono.pricePerHour.toFixed(2)} / 60-min lesson
                       </span>
@@ -952,13 +948,12 @@ export default function App() {
 
                   {/* Botón Comprar ahora */}
                   <div className="mt-auto pt-4">
-                    <button 
+                    <button
                       onClick={() => setSelectedBono(bono)}
-                      className={`w-full py-3 px-4 rounded-xl font-bold text-xs transition-all duration-300 text-center cursor-pointer ${
-                        bono.popular 
-                          ? 'bg-terracotta hover:bg-terracotta-hover text-white shadow-sm hover:shadow-md' 
+                      className={`w-full py-3 px-4 rounded-xl font-bold text-xs transition-all duration-300 text-center cursor-pointer ${bono.popular
+                          ? 'bg-terracotta hover:bg-terracotta-hover text-white shadow-sm hover:shadow-md'
                           : 'bg-navy hover:bg-navy-light text-white'
-                      }`}
+                        }`}
                       id={`btn-buy-${bono.id}`}
                     >
                       Buy Now
@@ -985,13 +980,12 @@ export default function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-5xl mx-auto" id="pricing-grid-dele">
               {bonos.filter(b => b.category === 'dele').map((bono) => (
-                <div 
+                <div
                   key={bono.id}
-                  className={`bg-white rounded-3xl p-6 flex flex-col justify-between transition-all duration-300 border relative ${
-                    bono.popular 
-                      ? 'border-terracotta shadow-xl scale-102 ring-4 ring-terracotta/5' 
+                  className={`bg-white rounded-3xl p-6 flex flex-col justify-between transition-all duration-300 border relative ${bono.popular
+                      ? 'border-terracotta shadow-xl scale-102 ring-4 ring-terracotta/5'
                       : 'border-slate-200/80 hover:border-slate-300 shadow-xs hover:shadow-md'
-                  }`}
+                    }`}
                   id={`card-${bono.id}`}
                 >
                   {/* Badge Más Popular */}
@@ -1007,14 +1001,14 @@ export default function App() {
                       <h4 className="text-lg font-display font-bold text-navy">
                         {bono.hours}-Hour DELE Package
                       </h4>
-                      
+
                       {/* Tarifa por hora detallada */}
                       <div className="mt-4 flex items-baseline justify-center gap-1">
                         <span className="text-4xl sm:text-5xl font-extrabold text-navy tracking-tight">
                           €{bono.price}
                         </span>
                       </div>
-                      
+
                       <span className="text-xs text-navy-light block mt-2 font-medium">
                         Just €{bono.pricePerHour.toFixed(2)} / 60-min lesson
                       </span>
@@ -1040,13 +1034,12 @@ export default function App() {
 
                   {/* Botón Comprar ahora */}
                   <div className="mt-auto pt-4">
-                    <button 
+                    <button
                       onClick={() => setSelectedBono(bono)}
-                      className={`w-full py-3 px-4 rounded-xl font-bold text-xs transition-all duration-300 text-center cursor-pointer ${
-                        bono.popular 
-                          ? 'bg-terracotta hover:bg-terracotta-hover text-white shadow-sm hover:shadow-md' 
+                      className={`w-full py-3 px-4 rounded-xl font-bold text-xs transition-all duration-300 text-center cursor-pointer ${bono.popular
+                          ? 'bg-terracotta hover:bg-terracotta-hover text-white shadow-sm hover:shadow-md'
                           : 'bg-navy hover:bg-navy-light text-white'
-                      }`}
+                        }`}
                       id={`btn-buy-${bono.id}`}
                     >
                       Buy Now
@@ -1070,7 +1063,7 @@ export default function App() {
                 Choose the package that best suits your goals and start learning Spanish with personalised lessons designed just for you. Whether you want to improve your communication skills or pass the DELE exam, I'll be happy to guide you every step of the way.
               </p>
               <div className="pt-2">
-                <button 
+                <button
                   onClick={() => scrollTo('contacto')}
                   className="bg-terracotta hover:bg-terracotta-hover text-white font-bold px-8 py-3.5 rounded-full text-sm shadow-md transition-all duration-300 cursor-pointer hover:-translate-y-0.5"
                 >
@@ -1126,7 +1119,7 @@ export default function App() {
       {/* TESTIMONIALS SECTION */}
       <section className="py-20 bg-white" id="testimonios">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-terracotta font-semibold text-sm tracking-widest uppercase block mb-2">Real student reviews</span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-navy">Success Stories from My Students</h2>
@@ -1138,8 +1131,8 @@ export default function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8" id="testimonials-grid">
             {testimonials.map((t, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="bg-bg-light rounded-2xl p-8 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-shadow relative"
                 id={`testimonial-card-${idx}`}
               >
@@ -1160,9 +1153,9 @@ export default function App() {
                 {/* Profile */}
                 <div className="flex items-center gap-4 mt-4 pt-4 border-t border-slate-200/50">
                   <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 border border-slate-200">
-                    <img 
-                      src={t.avatar} 
-                      alt={t.name} 
+                    <img
+                      src={t.avatar}
+                      alt={t.name}
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
                     />
@@ -1185,7 +1178,7 @@ export default function App() {
       {/* FREQUENTLY ASKED QUESTIONS (FAQ) ACCORDION */}
       <section className="py-20 bg-bg-light border-y border-slate-100" id="faqs">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          
+
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-navy">Frequently Asked Questions</h2>
             <div className="w-16 h-1 bg-terracotta mx-auto mt-4 rounded-full"></div>
@@ -1223,8 +1216,8 @@ export default function App() {
             ].map((faq, index) => {
               const isOpen = openFaqIndex === index;
               return (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="bg-white rounded-2xl border border-slate-200/80 overflow-hidden transition-all duration-300 shadow-xs"
                 >
                   <button
@@ -1235,7 +1228,7 @@ export default function App() {
                     <span className="text-base leading-tight">{faq.q}</span>
                     {isOpen ? <ChevronUp className="w-5 h-5 text-terracotta shrink-0" /> : <ChevronDown className="w-5 h-5 text-slate-400 shrink-0" />}
                   </button>
-                  
+
                   {isOpen && (
                     <div className="px-6 pb-5 text-sm text-navy-light font-light leading-relaxed bg-slate-50/50 animate-fadeIn" id={`faq-ans-${index}`}>
                       <p>{faq.a}</p>
@@ -1252,9 +1245,9 @@ export default function App() {
       {/* 5. CONTACT SECTION */}
       <section className="py-20 bg-white" id="contacto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-            
+
             {/* Left Contact Info (Col 5) */}
             <div className="lg:col-span-5 flex flex-col justify-between space-y-8" id="contact-info-block">
               <div className="space-y-6 text-center lg:text-left">
@@ -1278,10 +1271,10 @@ export default function App() {
 
                   <div>
                     <span className="block text-xs font-bold text-navy-light uppercase tracking-wider mb-2">Phone / WhatsApp:</span>
-                    <a 
-                      href="https://wa.me/34669212912" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href="https://wa.me/34669212912"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-lg font-bold text-navy hover:text-terracotta transition-colors"
                     >
                       <Phone className="w-5 h-5 text-terracotta" />
@@ -1293,28 +1286,28 @@ export default function App() {
                 <div>
                   <span className="block text-xs font-bold text-navy-light uppercase tracking-wider mb-3">Follow me on social media:</span>
                   <div className="flex gap-4 justify-center lg:justify-start">
-                    <a 
-                      href="https://instagram.com" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-10 h-10 rounded-xl bg-slate-100 hover:bg-terracotta hover:text-white text-navy flex items-center justify-center transition-all duration-300 shadow-xs cursor-pointer"
                       aria-label="Instagram"
                     >
                       <Instagram className="w-5 h-5" />
                     </a>
-                    <a 
-                      href="https://linkedin.com" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href="https://linkedin.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-10 h-10 rounded-xl bg-slate-100 hover:bg-terracotta hover:text-white text-navy flex items-center justify-center transition-all duration-300 shadow-xs cursor-pointer"
                       aria-label="LinkedIn"
                     >
                       <Linkedin className="w-5 h-5" />
                     </a>
-                    <a 
-                      href="https://youtube.com" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href="https://youtube.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-10 h-10 rounded-xl bg-slate-100 hover:bg-terracotta hover:text-white text-navy flex items-center justify-center transition-all duration-300 shadow-xs cursor-pointer"
                       aria-label="YouTube"
                     >
@@ -1337,7 +1330,7 @@ export default function App() {
                   <p className="text-navy-light text-base max-w-md mx-auto font-light leading-relaxed">
                     Thank you so much for reaching out! I've received your request. I will personally reply to your email within 24 hours. Speak soon!
                   </p>
-                  <button 
+                  <button
                     onClick={() => setSubmitSuccess(false)}
                     className="bg-navy hover:bg-navy-light text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all cursor-pointer"
                     id="btn-new-contact"
@@ -1353,9 +1346,9 @@ export default function App() {
                       <label htmlFor="name" className="block text-xs font-bold text-navy uppercase tracking-wider">
                         Full Name
                       </label>
-                      <input 
-                        type="text" 
-                        id="name" 
+                      <input
+                        type="text"
+                        id="name"
                         required
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -1369,9 +1362,9 @@ export default function App() {
                       <label htmlFor="email" className="block text-xs font-bold text-navy uppercase tracking-wider">
                         Email Address
                       </label>
-                      <input 
-                        type="email" 
-                        id="email" 
+                      <input
+                        type="email"
+                        id="email"
                         required
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -1387,7 +1380,7 @@ export default function App() {
                       <label htmlFor="level" className="block text-xs font-bold text-navy uppercase tracking-wider">
                         What is your Spanish level?
                       </label>
-                      <select 
+                      <select
                         id="level"
                         value={formData.level}
                         onChange={(e) => setFormData({ ...formData, level: e.target.value })}
@@ -1405,7 +1398,7 @@ export default function App() {
                       <label htmlFor="goals" className="block text-xs font-bold text-navy uppercase tracking-wider">
                         Main Learning Goal
                       </label>
-                      <select 
+                      <select
                         id="goals"
                         value={formData.goals}
                         onChange={(e) => setFormData({ ...formData, goals: e.target.value })}
@@ -1425,8 +1418,8 @@ export default function App() {
                     <label htmlFor="message" className="block text-xs font-bold text-navy uppercase tracking-wider">
                       Tell me a bit about yourself and your availability
                     </label>
-                    <textarea 
-                      id="message" 
+                    <textarea
+                      id="message"
                       rows={4}
                       required
                       value={formData.message}
@@ -1437,7 +1430,7 @@ export default function App() {
                   </div>
 
                   {/* Submit Button */}
-                  <button 
+                  <button
                     type="submit"
                     disabled={isSubmitting}
                     className="w-full bg-terracotta hover:bg-terracotta-hover disabled:bg-slate-400 text-white font-bold py-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 text-sm tracking-wide uppercase flex items-center justify-center gap-2 cursor-pointer"
@@ -1462,9 +1455,9 @@ export default function App() {
       {/* 6. FOOTER */}
       <footer className="bg-navy text-white pt-16 pb-12 border-t border-slate-800" id="footer-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-slate-800">
-            
+
             {/* Col 1: Logo & Info */}
             <div className="md:col-span-5 space-y-4">
               <div className="flex items-center gap-2">
@@ -1531,7 +1524,7 @@ export default function App() {
       {selectedBono && (
         <div className="fixed inset-0 bg-navy/60 backdrop-blur-xs flex items-center justify-center z-50 p-4 animate-fadeIn" id="stripe-modal">
           <div className="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-100 animate-fadeInUp">
-            
+
             {/* Modal Header */}
             <div className="bg-navy p-6 text-white flex justify-between items-center">
               <div className="flex items-center gap-2">
@@ -1543,7 +1536,7 @@ export default function App() {
                   <span className="text-[10px] text-slate-400 block mt-0.5">Admin Configuration Assistant</span>
                 </div>
               </div>
-              <button 
+              <button
                 onClick={() => { setSelectedBono(null); setIsCopied(false); }}
                 className="text-slate-400 hover:text-white p-1 rounded-full hover:bg-slate-800 transition-colors cursor-pointer"
                 id="btn-close-modal"
@@ -1554,7 +1547,7 @@ export default function App() {
 
             {/* Modal Content */}
             <div className="p-6 space-y-5">
-              
+
               {/* Selected package info */}
               <div className="bg-bg-light p-4 rounded-2xl border border-slate-100">
                 <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block">Selected Package</span>
@@ -1589,13 +1582,13 @@ export default function App() {
                   Stripe Placeholder URL Link:
                 </label>
                 <div className="flex items-center gap-2 bg-slate-50 border border-slate-200 rounded-xl p-2.5">
-                  <input 
-                    type="text" 
-                    readOnly 
+                  <input
+                    type="text"
+                    readOnly
                     value={selectedBono.stripeLinkPlaceholder}
                     className="bg-transparent border-none text-xs text-slate-500 w-full focus:outline-hidden font-mono"
                   />
-                  <button 
+                  <button
                     onClick={() => copyToClipboard(selectedBono.stripeLinkPlaceholder)}
                     className="bg-white hover:bg-slate-100 border border-slate-200 p-2 rounded-lg text-slate-600 hover:text-navy transition-all shrink-0 cursor-pointer"
                     title="Copy Link"
@@ -1614,14 +1607,14 @@ export default function App() {
                 <ShieldCheck className="w-3.5 h-3.5 text-slate-400" /> Secure transactions via HTTPS
               </span>
               <div className="flex gap-2 w-full sm:w-auto">
-                <button 
+                <button
                   onClick={() => setSelectedBono(null)}
                   className="w-full sm:w-auto px-4 py-2.5 rounded-lg text-xs font-semibold text-slate-600 hover:bg-slate-150 transition-all cursor-pointer"
                 >
                   Go Back
                 </button>
-                <a 
-                  href="#" 
+                <a
+                  href="#"
                   onClick={(e) => {
                     e.preventDefault();
                     alert(`Simulator: Redirecting to Stripe placeholder: \n${selectedBono.stripeLinkPlaceholder}\n\nWhen you replace this with your real Stripe URL in the code, this button will open the real checkout window.`);
