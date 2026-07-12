@@ -309,7 +309,7 @@ export default function App() {
 
       if (totalPoints <= 5) {
         level = 'Beginner (A1 - A2)';
-        recommended = 'General Spanish 10-Lessons Package or 5-Hour Package to start your learning journey with confidence.';
+        recommended = 'General Spanish 10-Lessons Package or 5-Lessons Package to start your learning journey with confidence.';
       } else if (totalPoints <= 11) {
         level = 'Intermediate (B1 - B2)';
         recommended = 'General Spanish 15-Lessons Package - Ideal for building strong conversation skills and structural accuracy.';
@@ -505,10 +505,11 @@ export default function App() {
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-navy leading-tight tracking-tight">
-                Learn Spanish <br />
-                <span className="text-terracotta bg-linear-to-r from-terracotta to-orange-600 bg-clip-text text-transparent">at your own pace</span> <br />
-                without the stress.
-              </h1>
+  Learn Spanish Online <br />
+  <span className="text-terracotta bg-linear-to-r from-terracotta to-orange-600 bg-clip-text text-transparent">with a Native Tutor</span> <br />
+  at your own pace.
+</h1>
+
               
               <p className="text-lg md:text-xl text-navy-light max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
                 Private, engaging, and personalized online Spanish lessons tailored to your exact lifestyle and goals. Break the barrier of speaking and express yourself naturally from day one!
@@ -583,7 +584,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-navy">About Me & My Method</h2>
+<h2 className="text-3xl md:text-4xl font-display font-bold text-navy">About Your Native Spanish Teacher</h2>
+
             <div className="w-16 h-1 bg-terracotta mx-auto mt-4 rounded-full"></div>
             <p className="text-navy-light mt-4 text-lg">
               Get to know my background and my personalized approach to teaching Spanish.
@@ -596,11 +598,12 @@ export default function App() {
               <div className="relative inline-block">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-slate-50 shadow-xl mx-auto">
                   <img 
-                    src="/images/default_5579fbd4-209a-4203-8e24-9e0a5e511d9e_3.png"
-                    alt="María López Hernán" 
-                    className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
-                  />
+  src="/images/default_5579fbd4-209a-4203-8e24-9e0a5e511d9e_3.png"
+  alt="María López Hernán - Native Online Spanish Teacher" 
+  className="w-full h-full object-cover"
+  referrerPolicy="no-referrer"
+/>
+
                 </div>
                 <div className="absolute bottom-4 right-4 bg-terracotta text-white p-3 rounded-full shadow-lg">
                   <Award className="w-6 h-6" />
@@ -629,8 +632,9 @@ export default function App() {
             <div className="lg:col-span-7 space-y-8">
               <div className="space-y-4">
                 <h3 className="text-3xl font-display font-bold text-navy flex items-center gap-2">
-                  Hi! I'm María <Smile className="w-7 h-7 text-terracotta animate-pulse" />
-                </h3>
+  Hi! I'm María, your Online Spanish Tutor <Smile className="w-7 h-7 text-terracotta animate-pulse" />
+</h3>
+
                 <p className="text-lg text-navy-light font-light leading-relaxed">
                   I'm a passionate native Spanish teacher from Spain with <strong className="text-navy font-semibold">more than 15 years of experience</strong> helping students from all over the world speak Spanish with confidence.
                 </p>
@@ -807,7 +811,8 @@ export default function App() {
           
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-terracotta font-semibold text-sm tracking-widest uppercase block mb-2">Invest in your Spanish</span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-navy">Spanish Lesson Packages</h2>
+<h2 className="text-3xl md:text-4xl font-display font-bold text-navy">Online Spanish Lesson Packages</h2>
+
             <div className="w-16 h-1 bg-terracotta mx-auto mt-4 rounded-full"></div>
             <p className="text-navy-light mt-6 text-lg leading-relaxed">
               Choose the package that best fits your goals and learn Spanish at your own pace. All lessons are 100% private, fully personalised, and taught online via Zoom.
@@ -1233,7 +1238,8 @@ export default function App() {
                   </div>
 
                   <div className="space-y-1.5">
-                    <label htmlFor="message" className="block text-xs font-bold text-navy uppercase tracking-wider">Tell me a bit about yourself and your availability</label>
+<label htmlFor="message" className="block text-xs font-bold text-navy uppercase tracking-wider">Book your first Spanish lesson: Tell me about your goals and availability</label>
+
                     <textarea id="message" rows={4} required value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} placeholder="Tell me about your motivation for learning Spanish and which days/times usually work best for your classes." className="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-hidden focus:border-terracotta focus:ring-2 focus:ring-terracotta/10 transition-all text-navy"></textarea>
                   </div>
 
@@ -1268,9 +1274,10 @@ export default function App() {
                   <span className="text-[10px] text-orange-200/80 font-medium tracking-wider uppercase">María López Hernán · Spanish Lessons</span>
                 </div>
               </div>
-              <p className="text-xs text-slate-400 max-w-sm font-light leading-relaxed">
-                100% online individual tutoring and personalized lesson plans designed to take your listening and speaking skills to the next level with confidence and fun.
-              </p>
+            <p className="text-xs text-slate-400 max-w-sm font-light leading-relaxed">
+  100% online individual Spanish tutoring with a native teacher. Personalized lesson plans designed to improve your conversational Spanish, listening, and speaking skills with confidence and fun.
+</p>
+
             </div>
 
             <div className="md:col-span-3 space-y-4">
