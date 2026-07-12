@@ -986,10 +986,8 @@ export default function App() {
               </div>
             </div>
           </div>
-
-      
-
-
+        
+        </div>
       </section>
 
       {/* TESTIMONIALS SECTION */}
@@ -1274,3 +1272,6 @@ export default function App() {
     </div>
   );
 }
+
+
+  
