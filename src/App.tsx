@@ -331,22 +331,54 @@ export default function App() {
     setRecommendedBono('');
   };
 
-  const handleContactSubmit = (e: React.FormEvent) => {
+    const handleContactSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
-      setFormData({
-        name: '',
-        email: '',
-        level: 'no-sure',
-        goals: 'general',
-        message: ''
+    const payload = {
+      // Usamos la variable que configuraste en Vercel
+      access_key: import.meta.env.WEB3FORMS,
+      subject: "¡Nuevo mensaje desde la web de Be Spanish!",
+      from_name: formData.name,
+      email: formData.email,
+      Nivel: formData.level,
+      Objetivo: formData.goals,
+      Mensaje: formData.message
+    };
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
       });
-    }, 1200);
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitSuccess(true);
+        setFormData({
+          name: '',
+          email: '',
+          level: 'no-sure',
+          goals: 'general',
+          message: ''
+        });
+      } else {
+        console.error("Error al enviar:", result);
+        alert("Hubo un problema al enviar el mensaje.");
+      }
+    } catch (error) {
+      console.error("Error de red:", error);
+      alert("Error de conexión. Comprueba tu internet.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+
 
   return (
     <div className="min-h-screen flex flex-col selection:bg-terracotta selection:text-white" id="inicio">
