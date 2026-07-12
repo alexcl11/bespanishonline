@@ -1048,7 +1048,7 @@ export default function App() {
             {[
               {
                 q: 'How do I book my lesson dates and times?',
-                a: 'Once you purchase a package, you will receive an automatic email with a link to my Calendly calendar. You can easily pick the days and times that work best for you week by week.'
+                a: 'Please contact me via WhatsApp or email before booking your first lesson to confirm the date and time. I have a very flexible schedule, and I'm confident we'll find a time that works perfectly for you. I look forward to helping you achieve your Spanish learning goals!'
               },
               {
                 q: 'What happens if I need to cancel or reschedule a lesson?',
@@ -1056,7 +1056,7 @@ export default function App() {
               },
               {
                 q: 'What platform will we use for the sessions?',
-                a: 'We mainly connect via Zoom or Google Meet. The link for each class is generated automatically and added to your calendar event. All you need is a computer or tablet with a camera, a stable microphone, and a good internet connection.'
+                a: 'All lessons are held via Zoom. I will send you the meeting link the day before your lesson by WhatsApp or email, whichever is most convenient for you.'
               },
               {
                 q: 'Are study materials included, or do I need to buy books?',
