@@ -309,13 +309,13 @@ export default function App() {
 
       if (totalPoints <= 5) {
         level = 'Beginner (A1 - A2)';
-        recommended = 'General Spanish 10-Hour Package or 5-Hour Package to start your learning journey with confidence.';
+        recommended = 'General Spanish 10-Lessons Package or 5-Hour Package to start your learning journey with confidence.';
       } else if (totalPoints <= 11) {
         level = 'Intermediate (B1 - B2)';
-        recommended = 'General Spanish 15-Hour Package - Ideal for building strong conversation skills and structural accuracy.';
+        recommended = 'General Spanish 15-Lessons Package - Ideal for building strong conversation skills and structural accuracy.';
       } else {
         level = 'Advanced (C1 - C2)';
-        recommended = 'General Spanish 15-Hour Package - Perfect for polishing advanced nuances, native expressions, and achieving complete fluency.';
+        recommended = 'General Spanish 15-Lessons Package - Perfect for polishing advanced nuances, native expressions, and achieving complete fluency.';
       }
 
       setEstimatedLevel(level);
@@ -830,7 +830,7 @@ export default function App() {
                   <div>
                     <div className="mb-6 text-center">
                       <h4 className="text-lg font-display font-bold text-navy">
-                        {bono.hours}-Hour Package
+                        {bono.hours}-Lessons Package
                       </h4>
                       
                       <div className="mt-4 flex items-baseline justify-center gap-1">
@@ -840,7 +840,7 @@ export default function App() {
                       </div>
                       
                       <span className="text-xs text-navy-light block mt-2 font-medium">
-                        Just €{bono.pricePerHour.toFixed(2)} / 60-min lesson
+                        Just €{bono.pricePerHour.toFixed(2)} / 50-min lesson
                       </span>
 
                       {bono.savings > 0 ? (
@@ -914,7 +914,7 @@ export default function App() {
                   <div>
                     <div className="mb-6 text-center">
                       <h4 className="text-lg font-display font-bold text-navy">
-                        {bono.hours}-Hour DELE Package
+                        {bono.hours}-Lessons DELE Package
                       </h4>
                       
                       <div className="mt-4 flex items-baseline justify-center gap-1">
@@ -924,7 +924,7 @@ export default function App() {
                       </div>
                       
                       <span className="text-xs text-navy-light block mt-2 font-medium">
-                        Just €{bono.pricePerHour.toFixed(2)} / 60-min lesson
+                        Just €{bono.pricePerHour.toFixed(2)} / 50-min lesson
                       </span>
 
                       {bono.savings > 0 ? (
