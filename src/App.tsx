@@ -1048,7 +1048,7 @@ export default function App() {
             {[
               {
                 q: 'How do I book my lesson dates and times?',
-                a: 'Please contact me via WhatsApp or email before booking your first lesson to confirm the date and time. I have a very flexible schedule, and I'm confident we'll find a time that works perfectly for you. I look forward to helping you achieve your Spanish learning goals!'
+                a: 'Please contact me via WhatsApp or email before booking your first lesson to confirm the date and time. I have a very flexible schedule, and I am confident we will find a time that works perfectly for you. I look forward to helping you achieve your Spanish learning goals!'
               },
               {
                 q: 'What happens if I need to cancel or reschedule a lesson?',
