@@ -989,20 +989,7 @@ export default function App() {
 
       
 
-            <div className="flex gap-4 items-start">
-              <div className="w-10 h-10 rounded-xl bg-orange-50 text-terracotta flex items-center justify-center shrink-0">
-                <MessageSquare className="w-5 h-5" />
-              </div>
-              <div>
-                <h4 className="font-display font-bold text-navy text-sm mb-1">Continuous Support</h4>
-                <p className="text-xs text-navy-light leading-relaxed">
-                  You are not alone between lessons. Feel free to send me short writings or quick questions on WhatsApp for feedback.
-                </p>
-              </div>
-            </div>
-          </div>
 
-        </div>
       </section>
 
       {/* TESTIMONIALS SECTION */}
