@@ -534,7 +534,7 @@ export default function App() {
                     <Check className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="block text-xs text-navy-light font-medium">Trial Session</span>
+
                     <span className="block text-sm font-bold text-navy">Get started today!</span>
                   </div>
                 </div>
