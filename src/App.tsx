@@ -518,12 +518,15 @@ export default function App() {
               
               <div className="relative">
                 <div className="w-72 h-72 sm:w-96 sm:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white rotate-2 hover:rotate-0 transition-all duration-500 transform hover:scale-102">
-                  <img 
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800&h=800" 
-                    alt="Spanish Teacher María López Hernán smiling with laptop" 
-                    className="w-full h-full object-cover object-top"
-                    referrerPolicy="no-referrer"
-                  />
+              
+
+// AHORA (copia exactamente el nombre de tu archivo)
+<img 
+  src="/images/default_28987e81-21ce-47a1-b8b3-3877e1c310c0_3.png" 
+  alt="Spanish Teacher María López Hernán" 
+  className="w-full h-full object-cover object-top"
+/>
+
                 </div>
                 
                 <div className="absolute -bottom-4 -left-6 bg-white p-4 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-3 animate-bounce" style={{ animationDuration: '3s' }}>
@@ -560,7 +563,7 @@ export default function App() {
               <div className="relative inline-block">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-slate-50 shadow-xl mx-auto">
                   <img 
-                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=600&h=600" 
+                    src="/images/default_5579fbd4-209a-4203-8e24-9e0a5e511d9e_3"
                     alt="María López Hernán" 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
