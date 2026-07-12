@@ -1165,13 +1165,13 @@ export default function App() {
                 <div>
                   <span className="block text-xs font-bold text-navy-light uppercase tracking-wider mb-3">Follow me on social media:</span>
                   <div className="flex gap-4 justify-center lg:justify-start">
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-100 hover:bg-terracotta hover:text-white text-navy flex items-center justify-center transition-all duration-300 shadow-xs cursor-pointer">
+                    <a href="https://www.instagram.com/mariatuprofedeele?igsh=dWE1YnB1OHJkNzNz" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-100 hover:bg-terracotta hover:text-white text-navy flex items-center justify-center transition-all duration-300 shadow-xs cursor-pointer">
                       <Instagram className="w-5 h-5" />
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-100 hover:bg-terracotta hover:text-white text-navy flex items-center justify-center transition-all duration-300 shadow-xs cursor-pointer">
+                    <a href="https://www.linkedin.com/in/maría-lópez-hernán-41b8966a" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-100 hover:bg-terracotta hover:text-white text-navy flex items-center justify-center transition-all duration-300 shadow-xs cursor-pointer">
                       <Linkedin className="w-5 h-5" />
                     </a>
-                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-100 hover:bg-terracotta hover:text-white text-navy flex items-center justify-center transition-all duration-300 shadow-xs cursor-pointer">
+                    <a href="https://youtube.com/@mariatuprofedeele9136?si=moL4SIAmh3yDmU41" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-100 hover:bg-terracotta hover:text-white text-navy flex items-center justify-center transition-all duration-300 shadow-xs cursor-pointer">
                       <Youtube className="w-5 h-5" />
                     </a>
                   </div>
