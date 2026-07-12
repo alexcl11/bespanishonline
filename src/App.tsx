@@ -336,15 +336,16 @@ export default function App() {
     setIsSubmitting(true);
     
     const payload = {
-      // Usamos la variable que configuraste en Vercel
-      access_key: import.meta.env.WEB3FORMS,
-      subject: "¡Nuevo mensaje desde la web de Be Spanish!",
-      from_name: formData.name,
-      email: formData.email,
-      Nivel: formData.level,
-      Objetivo: formData.goals,
-      Mensaje: formData.message
-    };
+  // Añadimos el prefijo VITE_
+  access_key: import.meta.env.VITE_WEB3FORMS,
+  subject: "¡Nuevo mensaje desde la web de Be Spanish!",
+  from_name: formData.name,
+  email: formData.email,
+  Nivel: formData.level,
+  Objetivo: formData.goals,
+  Mensaje: formData.message
+};
+
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
