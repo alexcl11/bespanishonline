@@ -987,30 +987,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 bg-white p-8 rounded-3xl border border-slate-100 shadow-sm max-w-5xl mx-auto">
-            <div className="flex gap-4 items-start">
-              <div className="w-10 h-10 rounded-xl bg-orange-50 text-terracotta flex items-center justify-center shrink-0">
-                <ShieldCheck className="w-5 h-5" />
-              </div>
-              <div>
-                <h4 className="font-display font-bold text-navy text-sm mb-1">Satisfaction Guarantee</h4>
-                <p className="text-xs text-navy-light leading-relaxed">
-                  If your first class doesn't meet your expectations, we will refund 100% of your payment immediately, no questions asked.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4 items-start">
-              <div className="w-10 h-10 rounded-xl bg-orange-50 text-terracotta flex items-center justify-center shrink-0">
-                <Clock className="w-5 h-5" />
-              </div>
-              <div>
-                <h4 className="font-display font-bold text-navy text-sm mb-1">No Strict Expiry Date</h4>
-                <p className="text-xs text-navy-light leading-relaxed">
-                  We understand life gets busy. Packages are valid for up to 1 year, so you can schedule sessions at your own pace.
-                </p>
-              </div>
-            </div>
+      
 
             <div className="flex gap-4 items-start">
               <div className="w-10 h-10 rounded-xl bg-orange-50 text-terracotta flex items-center justify-center shrink-0">
