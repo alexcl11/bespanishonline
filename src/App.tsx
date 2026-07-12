@@ -520,7 +520,7 @@ export default function App() {
                 <div className="w-72 h-72 sm:w-96 sm:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white rotate-2 hover:rotate-0 transition-all duration-500 transform hover:scale-102">
               
 
-// AHORA (copia exactamente el nombre de tu archivo)
+
 <img 
   src="/images/default_28987e81-21ce-47a1-b8b3-3877e1c310c0_3.png" 
   alt="Spanish Teacher María López Hernán" 
@@ -563,7 +563,7 @@ export default function App() {
               <div className="relative inline-block">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-slate-50 shadow-xl mx-auto">
                   <img 
-                    src="/images/default_5579fbd4-209a-4203-8e24-9e0a5e511d9e_3"
+                    src="/images/default_5579fbd4-209a-4203-8e24-9e0a5e511d9e_3.png"
                     alt="María López Hernán" 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
